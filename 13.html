@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  /*     function descendingOrder(n) {
+  return parseInt(
+    n.toString() 
+     .split('') 
+      .map(Number) 
+      .sort((a, b) => b - a)
+      .join(''),
+        10 // Convertir la chaîne en entier
+  );
+}
+
+console.log(descendingOrder(42145)); // Output: 54421
+console.log(descendingOrder(123456789)); // Output: 987654321
+console.log(descendingOrder(0)); // Output: 0
+*/
+function descendingOrder(n) {
+  var digitCount = new Array(10).fill(0);
+  n.toString().split('').forEach(digit => {
+    digitCount[parseInt(digit)]++;
+  });
+ var result = '';
+  for (var i = 9; i >= 0; i--) {
+    result += i.toString().repeat(digitCount[i]);
+  }
+ return parseInt(result, 10);
+}
+console.log(descendingOrder(42145)); 
+    </script>
+</body>
+</html>

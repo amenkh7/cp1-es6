@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*    function disemvowel(str) {
+    // Define a regular expression to match vowels (case-insensitive)
+    return str.replace(/[aeiouAEIOU]/g, '');
+}
+
+// Example usage
+console.log(disemvowel("This website is for losers LOL!")); // Output: "Ths wbst s fr lsrs LL!"
+*/
+function disemvowel(str) {
+    // Define the vowels in an array
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    // Split the string into an array of characters, filter out vowels, and join back
+    return str
+        .split('')
+        .filter(char => !vowels.includes(char))
+        .join('');
+}
+
+// Example usage
+console.log(disemvowel("This website is for losers LOL!")); // Output: "Ths wbst s fr lsrs LL!"
+
+    </script>
+</body>
+</html>

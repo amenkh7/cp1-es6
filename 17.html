@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  function findSmallestInt(arr){
+            return Math.min(...arr)
+        }
+        console.log(findSmallestInt(1,-1,2,5,6))*/
+        function findSmallestInt(arr){
+            var nb = arr[0];
+            for(var i=1 ;i <arr.length;i++){
+                if(arr[i]<nb){
+                    nb = arr[i];
+                }
+            }
+            return nb;
+        }
+        console.log(findSmallestInt([34, 15, 88, 2]));  
+    </script>
+</body>
+</html>

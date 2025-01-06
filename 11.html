@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  function findShort(str) {
+  // Divise la chaîne en mots
+  let words = str.split(' ');
+  
+  // Utilise Math.min pour trouver la longueur du mot le plus court
+  let shortestLength = Math.min(...words.map(word => word.length));
+  
+  return shortestLength;
+}
+
+console.log(findShort("my name si rima")); // 3
+
+    </script>
+</body>
+</html>

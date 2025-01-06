@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function getCount(str) {
+    var alfabe = "aeiou";
+    var count = 0;
+    for (var i = 0; i < str.length; i++) {
+        if (alfabe.includes(str[i])) {
+            count++;
+        }
+    }
+    return count;
+}
+var n = "hello";
+console.log(getCount(n)); // Output: 2
+
+//ES6
+/*const getCount = (str) => {
+    const alfabe = "aeiou";
+    return [...str].filter(i => alfabe.includes(i)).length;
+};
+const n = "hello";
+console.log(getCount(n));*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*    function highAndLow(numbers) {
+  // Divise la chaîne en tableau et convertit les éléments en nombres
+  let numArray = numbers.split(" ").map(Number);
+  
+  // Trouve le maximum et le minimum
+  let highest = Math.max(...numArray);
+  let lowest = Math.min(...numArray);
+  
+  // Retourne le résultat formaté
+  return `${highest} ${lowest}`;
+}
+
+// Exemples
+console.log(highAndLow("1 2 3 4 5"));   // "5 1"
+console.log(highAndLow("10 2 -3 4 1")); // "10 -5"*/
+function highAndLow(numbers) {
+  // Diviser la chaîne en un tableau de nombres
+  let numArray = numbers.split(" ").map(Number);
+  
+  // Trouver le maximum et le minimum
+  let max = Math.max(...numArray);
+  let min = Math.min(...numArray);
+  
+  // Retourner le résultat sous forme de chaîne
+  return `${max} ${min}`;
+}
+
+// Exemple d'utilisation
+console.log(highAndLow("1 2 3 4 5"));   // "5 1"
+console.log(highAndLow("10 2 -3 4 -5")); // "10 -5"
+console.log(highAndLow("-1 -1"));        // "-1 -1"
+
+    </script>
+</body>
+</html>

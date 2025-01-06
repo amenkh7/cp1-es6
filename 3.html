@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function getMiddle(s) {
+    const len = s.length;  // Utilisez 's' au lieu de 'str'
+    const mid = Math.floor(len / 2);
+    return len % 2 === 0 ? s.slice(mid - 1, mid + 1) : s[mid];  // Utilisez 's' au lieu de 'str'
+}
+
+console.log(getMiddle("test"));  // "es"
+console.log(getMiddle("middle"));  // "dd"
+console.log(getMiddle("hello"));  // "l"
+console.log(getMiddle("a"));  // "a"
+    </script>
+</body>
+</html>

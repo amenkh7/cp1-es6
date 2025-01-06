@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*  ;function isPerfectSquare(blocks) {
+    if (blocks < 0) {
+        return false; 
+      }
+    const sqrt = Math.floor(Math.sqrt(blocks)); 
+       return sqrt * sqrt === blocks;
+}
+
+// Example Usage:
+const blocks = 4;
+if (isPerfectSquare(blocks)) {
+    console.log(`${blocks} true`);
+} else {
+    console.log(`${blocks} false`) 
+}*/
+function isSquare(blocks) {
+    if (blocks < 0) {
+        return false;
+    }
+
+    for (var i = 0; i * i <= blocks; i++) {
+        if (i * i === blocks) {
+            return true;
+        }
+    }
+    return false;
+}
+
+console.log(isSquare(4));   // Résultat : true
+console.log(isSquare(9));   // Résultat : true
+console.log(isSquare(8));   // Résultat : false
+console.log(isSquare(16));  // Résultat : true
+console.log(isSquare(-1));  // Résultat : false
+
+
+    </script>
+</body>
+</html>

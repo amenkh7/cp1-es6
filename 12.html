@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dnaStrand(dna) {
+  var num = '';
+  
+  for (var i = 0; i < dna.length; i++) {
+    switch (dna[i]) {
+      case 'A':
+          num += 'T';
+        break;
+      case 'T':
+         num += 'A';
+        break;
+      case 'C':
+         num += 'G';
+        break;
+      case 'G':
+         num += 'C';
+        break;
+    }
+  }
+  return num;
+}
+console.log(dnaStrand("ATCG")); // "TAGC"
+
+    </script>
+</body>
+</html>
